@@ -21,8 +21,20 @@ class MyHomePage extends StatelessWidget
         title: Text(title, style: const TextStyle(color: Colors.white , fontSize: 15),),
       ),
       backgroundColor: Colors.black,
+      bottomNavigationBar: Container(
+        decoration: const BoxDecoration(
+          color: Colors.black,
+          boxShadow: <BoxShadow>[
+              BoxShadow(
+                color: Colors.white,
+                blurRadius: 12,
+                spreadRadius: 4,
+      )
+          ]
+        ),
+      ),
       body: Column(
-        mainAxis  Alignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
         Container(color: Colors.white , width: MediaQuery.of(context).size.width, height: 30,)
